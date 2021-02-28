@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 data_filename = 'creditcard.csv'
 
 df = pd.read_csv(data_filename)
-# Separate out fraud and genuine transactions
 df["Label"] = "Genuine"
 df.loc[df["Class"] == 1, "Label"] = "Fraud"
 
